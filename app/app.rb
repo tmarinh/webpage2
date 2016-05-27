@@ -5,7 +5,10 @@ module Hacker
     register Padrino::Mailer
     register Padrino::Helpers
     enable :sessions
-
+    class YourApplication < Padrino::Application
+      register BootstrapForms
+      # ...
+    end
 
     class Hacker::App
       get '/' do
@@ -14,6 +17,7 @@ module Hacker
     end
 
 
+    # comentario para pruebas de git
     ##
     # Caching support.
     #
